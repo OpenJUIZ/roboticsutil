@@ -1,0 +1,30 @@
+
+containers:   
+  load_paths: 
+    - "/opt/juiz/share/juiz/ContainerName"
+    - "${ShelfDirectory}"
+    - "../build/lib/Debug"
+    - "../build/lib/Release"
+
+  preload:     
+    MobileRobotKinematics:       
+      operations: 
+        - "updatePose"
+        - "getPose"
+        - "setTargetVelocity"
+        - "setRobotParameter"
+        - "getMotorVelocity"
+
+load_paths: 
+  - "./"
+
+operations:   
+  load_paths: 
+    - "/opt/juiz/share/juiz/ContainerName"
+    - "${ShelfDirectory}"
+    - "../build/lib/Debug"
+    - "../build/lib/Release"
+
+  preload: 
+    - "valueSelector"
+    - "floatsToLaser"
